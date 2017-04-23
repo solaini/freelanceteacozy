@@ -59,8 +59,14 @@ nav span{
 .middle.container {
     display: flex;
     width: 1000px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+}
+.middle.container .photos{
+    display: flex;
+    flex-flow: wrap column;
+    width: 300px;
+    height: 200px;
 }
 
 
