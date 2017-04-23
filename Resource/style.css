@@ -5,10 +5,10 @@ body, a, header{
     font-family: Helvetica;
     opacity: 0.9;
 }
-
-div {
+/* Borders for all items to determine build levels*/
+/*div {
     border: 1px solid white;
-}
+}*/
 
 header{
     top: 0px;
@@ -42,7 +42,7 @@ nav span{
     padding: 10 0 10 0;
 }
 /*This is the Mission Statment Styling*/
-.top.container{
+.top{
     display: flex;
     background-image: url("mission-background.jpg");
     height: 700px;
@@ -51,23 +51,81 @@ nav span{
     justify-content: center;
     flex-direction: column;
 }
-.text {
+.text, h4 {
     text-align: center;
     background-color: black;
 }
+/*subsection title layout*/
+.titl {
+    text-align: center;
+}
 /* This is the styling for Tea of the Month*/
-.middle.container {
+.middle {
     display: flex;
     width: 1000px;
     flex-direction: column;
-    justify-content: center;
 }
-.middle.container .photos{
+.teas{
+    align-items: center;
+}
+.photos {
     display: flex;
-    flex-flow: wrap column;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    align-items: center;
+}
+.middle h4{
+    padding-top: 10px;
+}
+.middle img{
+    height: 200px;
     width: 300px;
+}
+
+/*Bottom container formating*/
+.bottom {
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("locations-background.jpg");
+}
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+.loca span{
+    padding: 15px;
+}
+.loca {
+    display: flex;
+    width: 300px;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    opacity: 1;
+    align-content: flex-start;
+
+}
+
+
+/*Footer Styling*/
+footer {
+    display: fixed;
+    bottom: 10px;
+    padding-left: 20px;
+}
+/*Bottom contact styling*/
+.contact{
+    text-align: center;
     height: 200px;
 }
+
 
 
 
